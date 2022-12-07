@@ -1,0 +1,17 @@
+{
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    }
+}
+
+// {
+//     // Is git enabled
+//     "git.enabled": true,
+
+//     // Path to the git executable
+//     "git.path": "C:\\mingw64\\bin\\git.exe"
+
+//     // other settings
+// }
