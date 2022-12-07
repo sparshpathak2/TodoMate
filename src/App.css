@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 15px;
+  border-radius: 2px;
+  border-width: 1px;
+}
+
+.container-2 {
+  width: 40%;
+  padding: 50px 0;
+  /* height: 300px; */
+  margin: 50px auto;
+  /* margin: auto; */
+  /* border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #282c34; */
+  background-color: #ffff00;
+}
+
+.box-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* flex: 1; */
+  margin: 0 auto;
+  width: 80%;
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px; */
+  /* margin: auto; */
+  /* background-color: #61dafb; */
+  text-align: center;
+  font-weight: 700;
+}
+
+.container-2 {
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* gap: 1em; */
+}
+
+.item-1 {
+  flex: 1;
+  /* flex-grow: 1; */
+}
+
+#input-2 {
+  width: 100%;
+  height: 30px;
+}
+
+.todoTextarea {
+  width: 100%;
+  /* height: 100px; */
+  resize: none;
+  font-size: 16px;
+  font-family: Helvetica;
+  padding: 10px;
+}
+
+#todo {
+  padding: 8px 12px;
+  font-family: Helvetica;
+  border-radius: 5px;
+  border-color: #1976d2;
+  font-size: 15px;
+  color: yellow;
+  background-color: #1976d2;
+  /* margin: 10px; */
+}
+
+#clear {
+  padding: 5px 12px;
+  font-family: Helvetica;
+  border-radius: 5px;
+  border-color: #1976d2;
+  font-size: 15px;
+  color: #1976d2;
+  background-color: yellow;
+  /* margin: 10px; */
+}
+
+#todo:hover {
+  cursor: pointer;
+}
+
+#clear:hover {
+  cursor: pointer;
+}
+
+.box-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  /* flex-wrap: wrap; */
+  gap: 10px;
+  /* flex: 1; */
+  margin: 0 auto;
+  width: 80%;
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px; */
+  /* margin: auto; */
+  /* background-color: #61dafb; */
+  text-align: center;
+  font-weight: 700;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.todoLabel {
+  font-family: Helvetica;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.todoNumber {
+  /* font-family: Helvetica; */
+  font-size: 20px;
+}
+
+.todoInput {
+  text-align: left;
+  width: 15px;
+  height: 15px;
+}
+
+.todoInput:hover {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.todoContainer {
+  text-align: left;
+}
