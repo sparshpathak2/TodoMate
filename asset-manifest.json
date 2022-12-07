@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TodoMate/static/css/main.836d3ee6.css",
+    "main.js": "/TodoMate/static/js/main.c1e0068b.js",
+    "static/js/787.2843ca88.chunk.js": "/TodoMate/static/js/787.2843ca88.chunk.js",
+    "index.html": "/TodoMate/index.html",
+    "main.836d3ee6.css.map": "/TodoMate/static/css/main.836d3ee6.css.map",
+    "main.c1e0068b.js.map": "/TodoMate/static/js/main.c1e0068b.js.map",
+    "787.2843ca88.chunk.js.map": "/TodoMate/static/js/787.2843ca88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.836d3ee6.css",
+    "static/js/main.c1e0068b.js"
+  ]
+}
