@@ -9,8 +9,10 @@ export default function ToDo({ todo, toggleTodo }) {
     return (
         <div className='todoContainer'>
             <label className='todoLabel'>
-                <input className='todoInput' type="checkbox" checked= {todo.complete} onChange={handleTodoClick} />
-                {todo.name}
+                <div className="selectTodo">
+                    <input className='todoInput' type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
+                </div>
+                {todo.name.length>"95"?todo.name.slice(0, 96) + '...' : todo.name}
             </label>
         </div>
     )

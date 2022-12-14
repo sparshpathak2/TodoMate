@@ -77,20 +77,29 @@ function App() {
 
   return (
     <>
-      <div className="container-2">
-        <div className="box-main">
-          <div className="box-1">
+      <div className="todoInputContainer">
+      <div className="box-1">
             {/* <input id="input-2" type="text" /> */}
             <textarea ref={todoNameRef} className="todoTextarea" name="todoTextarea" id="textarea" cols="60" rows="5" placeholder="Jot down..."></textarea>
-            <button className="btn-primary" id="todo" onClick={handleAddTodo}>TO DO</button>
-            <button className="btn-primary" id="clear" onClick={handleClearTodos}>CLEAR COMPLETE</button>
+            <button className="btn-primary" id="btnTodo" onClick={handleAddTodo}>TO DO</button>
+            <button className="btn-primary" id="btnClear" onClick={handleClearTodos}>CLEAR COMPLETE</button>
           </div>
+      </div>
+        {/* <div className="todoListBox">
+          
+        </div> */}
+        <div className="box-main">
+          
           <div className="box-2">
+            <br />
             <div className="todoNumber">{todos.filter(todo => !todo.complete).length} left</div>
-            <ToDoList className="todolist" todos={todos} toggleTodo={toggleTodo} />
+            {/* <hr /> */}
+            <div className="todoBox">
+              <ToDoList className="todolist" todos={todos} toggleTodo={toggleTodo} />
+            </div>
           </div>
         </div>
-      </div>
+      
 
       {/* <div className="container2">
         <div className="item item-1">item-1</div>
