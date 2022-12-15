@@ -122,11 +122,11 @@
   /* margin: 10px; */
 }
 
-#todo:hover {
+#btnTodo:hover {
   cursor: pointer;
 }
 
-#clear:hover {
+#btnClear:hover {
   cursor: pointer;
 }
 
@@ -163,10 +163,6 @@
 
 .todoLabel {
   /* font-family: Helvetica; */
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.6;
 }
 
 .todoNumber {
@@ -196,10 +192,45 @@
   /* margin: 10px; */
 }
 
+.todoContainer1 {
+  text-align: left;
+  background-color: antiquewhite;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  /* p: 10; */
+}
+
 .todoBox {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
   align-content: flex-start;
   gap: 1.8em;
+}
+
+
+.todoName {
+  padding: 0px 12px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.buttons {
+  width: 100%;
+  /* display: block; */
+  /* justify-content: flex-end; */
+  /* justify-items: flex-end;
+  align-items: flex-end;
+  align-content: flex-end; */
+}
+
+.btnTag {
+  float: left;
+}
+
+.btnAddtodo {
+  float: right;
 }

@@ -12,6 +12,7 @@ import Container from '@mui/material/Container'
 import './App.css'
 import { border } from "@mui/system"
 import TextField from '@mui/material/TextField'
+import { brown } from "@mui/material/colors";
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
@@ -70,6 +71,10 @@ function App() {
     setTodos(newTodos)
   }
 
+  function handleTag() {
+
+  }
+
   // function handleOnChange(event) {
   //   console.log("add to do")
   //   setTodos(event.target.value)
@@ -77,29 +82,63 @@ function App() {
 
   return (
     <>
-      <div className="todoInputContainer">
-      <div className="box-1">
-            {/* <input id="input-2" type="text" /> */}
-            <textarea ref={todoNameRef} className="todoTextarea" name="todoTextarea" id="textarea" cols="60" rows="5" placeholder="Jot down..."></textarea>
-            <button className="btn-primary" id="btnTodo" onClick={handleAddTodo}>TO DO</button>
-            <button className="btn-primary" id="btnClear" onClick={handleClearTodos}>CLEAR COMPLETE</button>
+      <Box sx={{
+        // text-align: left,
+        // background-color: antiquewhite,
+        bgcolor: 'yellow',
+        width: '50%',
+        // height: '200px',
+        p: '50px',
+        m: '20px auto',
+        borderRadius: 2,
+        boxShadow: 2,
+      }}>
+        <div className="box-1">
+          {/* <input id="input-2" type="text" /> */}
+          <textarea ref={todoNameRef} className="todoTextarea" name="todoTextarea" id="textarea" cols="60" rows="5" placeholder="Jot down..."></textarea>
+          {/* <Box className="buttons" sx={{
+            display: 'flex',
+            gap: 2,
+            // flexDirection: 'row'
+            // alignItems: 'flex-end',
+            // alignContent: 'flex-end',
+            justifyContent: 'flex-start'
+          }}>
+          </Box> */}
+          <div className="buttons">
+            <span className="btnTag">
+              <Button onClick={handleTag}>Tag</Button>
+            </span>
+            <span className="btnAddtodo">
+              <Button variant="contained" onClick={handleAddTodo} sx={{
+                marginLeft: 1,
+                marginRight: 2
+              }}>TO DO</Button>
+              <Button variant="outlined" onClick={handleClearTodos}>CLEAR COMPLETE</Button>
+            </span>
           </div>
-      </div>
-        {/* <div className="todoListBox">
+          {/* <button className="btn-primary" id="btnTodo" onClick={handleAddTodo}>TO DO</button> */}
+          {/* <button className="btn-primary" id="btnClear" onClick={handleClearTodos}>CLEAR COMPLETE</button> */}
+        </div>
+      </Box>
+      {/* <div className="todoInputContainer">
+
+      </div> */}
+      {/* <div className="todoListBox">
           
         </div> */}
-        <div className="box-main">
-          
-          <div className="box-2">
-            <br />
-            <div className="todoNumber">{todos.filter(todo => !todo.complete).length} left</div>
-            {/* <hr /> */}
-            <div className="todoBox">
-              <ToDoList className="todolist" todos={todos} toggleTodo={toggleTodo} />
-            </div>
+      <div className="box-main">
+
+        <div className="box-2">
+          <br />
+          <div className="todoNumber">{todos.filter(todo => !todo.complete).length} left</div>
+          {/* <hr /> */}
+          <div className="todoBox">
+            <ToDoList className="todolist" todos={todos} toggleTodo={toggleTodo} />
           </div>
         </div>
-      
+      </div>
+
 
       {/* <div className="container2">
         <div className="item item-1">item-1</div>
